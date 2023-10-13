@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress_bar</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="ws-company-body-top">
+            <ul class="ws-company-body-step">
+                <li class="ws-company-body-step-1 active"><span class="ws-step-icon ico-1"></span><span
+                        class="ws-step-label">Đặt dịch vụ ONLINE</span></li>
+                <li class="ws-company-body-step-2"><span class="ws-step-icon ico-2"></span><span
+                        class="ws-step-label">Ký hồ
+                        sơ TẬN NHÀ</span></li>
+                <li class="ws-company-body-step-3"><span class="ws-step-icon ico-3"></span><span
+                        class="ws-step-label">Nhận
+                        giấy phép + con dấu TẬN NHÀ</span></li>
+                <li class="ws-company-body-step-4"><span class="ws-step-icon ico-4"></span><span
+                        class="ws-step-label">Làm
+                        thủ tục sau thành lập (*)</span></li>
+            </ul>
+            <div class="ws-head-note">(*) trong vòng 10 ngày sau thành lập theo luật định</div>
+        </div>
+    </div>
+    <script>
+        // Kiểm tra xem DevTools có được mở hay không
+        function isDevToolsOpened() {
+            const element = new Image();
+            element.__defineGetter__('id', () => {
+                // Mở DevTools thì chúng ta không thay đổi giá trị id
+                // Ngược lại, nếu DevTools không được mở, giá trị id sẽ thay đổi
+                alert('DevTools is opened');
+            });
+
+            // In element ra console để kiểm tra
+            console.log(element);
+        }
+
+        // Gọi hàm kiểm tra DevTools
+        isDevToolsOpened();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+.container {
+  margin: auto;
+  padding: 0 15px;
+  max-width: 1200px;
+  position: relative;
+}
+.ws-company-body-top {
+  position: relative;
+}
+.ws-company-body-top::before {
+  top: 20px;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #ddd;
+}
+ul.ws-company-body-step {
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  padding: 0;
+  max-width: 90%;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(4, 1fr);
+}
+ul.ws-company-body-step li {
+  gap: 10px;
+  margin: 0;
+  display: grid;
+}
+ul.ws-company-body-step .ws-company-body-step-1 .ws-step-icon {
+  background: url(https://thesmile.vn/wp-content/plugins/ws-thesmile-contact-lead/assets/images/icon-step-1.png)
+    no-repeat center center;
+  background-size: 40px 40px;
+}
+ul.ws-company-body-step .active .ws-step-label {
+  font-weight: 700;
+}
+ul.ws-company-body-step .ws-company-body-step-2 .ws-step-icon {
+  background: url(https://thesmile.vn/wp-content/plugins/ws-thesmile-contact-lead/assets/images/icon-step-2.png)
+    no-repeat center center;
+  background-size: 40px 40px;
+}
+.ws-step-label {
+  white-space: nowrap;
+}
+ul.ws-company-body-step .ws-company-body-step-3 .ws-step-icon {
+  background: url(https://thesmile.vn/wp-content/plugins/ws-thesmile-contact-lead/assets/images/icon-step-3.png)
+    no-repeat center center;
+  background-size: 40px 40px;
+}
+ul.ws-company-body-step .ws-company-body-step-4 .ws-step-icon {
+  background: url(https://thesmile.vn/wp-content/plugins/ws-thesmile-contact-lead/assets/images/icon-step-4.png)
+    no-repeat center center;
+  background-size: 40px 40px;
+}
+ul.ws-company-body-step .ws-step-icon {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+}
+.ws-head-note {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  ul.ws-company-body-step {
+    gap: 10px;
+    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  ul.ws-company-body-step li {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .ws-company-body-top::before {
+    top: 0;
+    left: 18px;
+    right: auto;
+    height: auto;
+    bottom: 40px;
+    width: 4px;
+  }
+}
